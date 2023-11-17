@@ -12,3 +12,7 @@ check:
 fix:
 	pipenv run black .
 	pipenv run isort .
+
+.PHONY: test
+test:
+	pipenv run pytest .

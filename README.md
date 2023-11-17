@@ -20,3 +20,4 @@ However, hopefully you'll appreciate some of the ideas within!
 * [Flake8](https://flake8.pycqa.org/en/latest/) for linting
 * [structlog](https://www.structlog.org/en/stable/) for structured logging
 * [isort](https://pycqa.github.io/isort/) to sort imports
+* [pytest](https://docs.pytest.org/en/stable/) for testing
