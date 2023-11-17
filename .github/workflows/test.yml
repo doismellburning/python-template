@@ -17,3 +17,4 @@ jobs:
       - run: pipenv install
       - run: make bootstrap
       - run: make check
+      - run: make test
