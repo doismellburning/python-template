@@ -16,3 +16,4 @@ However, hopefully you'll appreciate some of the ideas within!
 * Dependabot updates for Python dependencies and GitHub Actions
 * Dependabot auto-merge for minor and patch-level updates
 * Makefile with convenience commands
+* [Black](https://black.readthedocs.io/en/stable/) for code formatting
