@@ -15,3 +15,4 @@ However, hopefully you'll appreciate some of the ideas within!
 * [Pipenv](https://pipenv.pypa.io/en/latest/)
 * Dependabot updates for Python dependencies and GitHub Actions
 * Dependabot auto-merge for minor and patch-level updates
+* Makefile with convenience commands
