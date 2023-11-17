@@ -18,3 +18,4 @@ However, hopefully you'll appreciate some of the ideas within!
 * Makefile with convenience commands
 * [Black](https://black.readthedocs.io/en/stable/) for code formatting
 * [Flake8](https://flake8.pycqa.org/en/latest/) for linting
+* [structlog](https://www.structlog.org/en/stable/) for structured logging
