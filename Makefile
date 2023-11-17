@@ -5,6 +5,7 @@ bootstrap:
 .PHONY: check
 check:
 	pipenv run black --check .
+	pipenv run flake8 .
 
 .PHONY: fix
 fix:
