@@ -15,4 +15,4 @@ fix:
 
 .PHONY: test
 test:
-	pipenv run pytest .
+	pipenv run pytest --cov=. .
