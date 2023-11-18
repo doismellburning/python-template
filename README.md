@@ -22,3 +22,4 @@ However, hopefully you'll appreciate some of the ideas within!
 * [isort](https://pycqa.github.io/isort/) to sort imports
 * [pytest](https://docs.pytest.org/en/stable/) for testing
 * [Coverage.py](https://coverage.readthedocs.io/en/latest/) and [pytest-cov](https://github.com/pytest-dev/pytest-cov) for measuring code coverage
+* [Mypy](https://www.mypy-lang.org/) for type checking
