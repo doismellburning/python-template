@@ -5,19 +5,15 @@ bootstrap:
 	pipenv install --dev
 
 .PHONY: check
-check: black flake8 isort mypy
+check: black lint mypy
 
 .PHONY: black
 black:
 	pipenv run black --check $(SRCDIR)
 
-.PHONY: flake8
-flake8:
-	pipenv run flake8 $(SRCDIR)
-
-.PHONY: isort
-isort:
-	pipenv run isort --check-only $(SRCDIR)
+.PHONY: lint
+lint:
+	pipenv run ruff check $(SRCDIR)
 
 .PHONY: mypy
 mypy:
@@ -26,7 +22,7 @@ mypy:
 .PHONY: fix
 fix:
 	pipenv run black $(SRCDIR)
-	pipenv run isort $(SRCDIR)
+	pipenv run ruff check --fix $(SRCDIR)
 
 .PHONY: test
 test:

@@ -8,13 +8,11 @@ structlog = "*"
 
 [dev-packages]
 black = "*"
-flake8 = "*"
-isort = "*"
 pytest = "*"
 coverage = "*"
 pytest-cov = "*"
 mypy = "*"
-flake8-bugbear = "*"
+ruff = "*"
 
 [requires]
 python_version = "3.11"
