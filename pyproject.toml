@@ -4,3 +4,15 @@ branch = true
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
+
+[tool.ruff]
+select = [
+	"F",  # pyflakes
+	"E", "W",  # pycodestyle
+	"C90",  # mccabe
+	"I",  # isort
+	"N",  # pep8-naming
+	"UP",  # pyupgrade
+	"B",  # flake8-bugbear
+	"INP",  # flake8-no-pep420
+]
