@@ -19,6 +19,6 @@ However, hopefully you'll appreciate some of the ideas within!
 * [Black](https://black.readthedocs.io/en/stable/) for code formatting
 * [structlog](https://www.structlog.org/en/stable/) for structured logging
 * [pytest](https://docs.pytest.org/en/stable/) for testing
-* [Coverage.py](https://coverage.readthedocs.io/en/latest/) and [pytest-cov](https://github.com/pytest-dev/pytest-cov) for measuring code coverage
+* [Coverage.py](https://coverage.readthedocs.io/en/latest/) for measuring code coverage
 * [Mypy](https://www.mypy-lang.org/) for type checking
 * [Ruff](https://docs.astral.sh/ruff/) for [linting ALL the things](https://docs.astral.sh/ruff/rules/)

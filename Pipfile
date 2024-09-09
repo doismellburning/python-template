@@ -10,7 +10,6 @@ structlog = "*"
 black = "*"
 pytest = "*"
 coverage = "*"
-pytest-cov = "*"
 mypy = "*"
 ruff = "*"
 
