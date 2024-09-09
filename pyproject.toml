@@ -1,10 +1,14 @@
 [tool.coverage.run]
 branch = true
+dynamic_context = "test_function"
 
 [tool.coverage.report]
 fail_under = 100
 show_missing = true
 skip_covered = true
+
+[tool.coverage.html]
+show_contexts = true
 
 [tool.ruff]
 select = [
