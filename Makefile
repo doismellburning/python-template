@@ -26,4 +26,6 @@ fix:
 
 .PHONY: test
 test:
-	pipenv run pytest --cov=$(SRCDIR) $(SRCDIR)
+	pipenv run coverage run --module pytest $(SRCDIR)
+	pipenv run coverage report
+	pipenv run coverage html
