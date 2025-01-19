@@ -11,6 +11,9 @@ skip_covered = true
 show_contexts = true
 
 [tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
 select = [
 	"F",  # pyflakes
 	"E", "W",  # pycodestyle
