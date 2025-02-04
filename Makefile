@@ -2,30 +2,30 @@ SRCDIR=.
 
 .PHONY: bootstrap
 bootstrap:
-	pipenv install --dev
+	uv sync --dev
 
 .PHONY: check
 check: black lint mypy
 
 .PHONY: black
 black:
-	pipenv run black --check $(SRCDIR)
+	uv run black --check $(SRCDIR)
 
 .PHONY: lint
 lint:
-	pipenv run ruff check $(SRCDIR)
+	uv run ruff check $(SRCDIR)
 
 .PHONY: mypy
 mypy:
-	pipenv run mypy $(SRCDIR)
+	uv run mypy $(SRCDIR)
 
 .PHONY: fix
 fix:
-	pipenv run black $(SRCDIR)
-	pipenv run ruff check --fix $(SRCDIR)
+	uv run black $(SRCDIR)
+	uv run ruff check --fix $(SRCDIR)
 
 .PHONY: test
 test:
-	pipenv run coverage run --module pytest $(SRCDIR)
-	pipenv run coverage report
-	pipenv run coverage html
+	uv run coverage run --module pytest $(SRCDIR)
+	uv run coverage report
+	uv run coverage html
