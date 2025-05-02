@@ -8,6 +8,10 @@ dependencies = [
     "structlog",
 ]
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [tool.coverage.run]
 branch = true
 dynamic_context = "test_function"

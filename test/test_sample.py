@@ -1,4 +1,4 @@
-import skeleton
+from python_template import skeleton
 
 
 def test_nothing():

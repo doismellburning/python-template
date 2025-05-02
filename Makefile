@@ -26,6 +26,6 @@ fix:
 
 .PHONY: test
 test:
-	uv run coverage run --module pytest $(SRCDIR)
+	uv run coverage run --module pytest test
 	uv run coverage report
 	uv run coverage html
