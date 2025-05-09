@@ -1,4 +1,6 @@
-SRCDIR=.
+SRCDIR=src
+TESTDIR=test
+CODEDIRS=$(SRCDIR) $(TESTDIR)
 
 .PHONY: bootstrap
 bootstrap:
@@ -9,23 +11,23 @@ check: black lint mypy
 
 .PHONY: black
 black:
-	uv run black --check $(SRCDIR)
+	uv run black --check $(CODEDIRS)
 
 .PHONY: lint
 lint:
-	uv run ruff check $(SRCDIR)
+	uv run ruff check $(CODEDIRS)
 
 .PHONY: mypy
 mypy:
-	uv run mypy $(SRCDIR)
+	uv run mypy $(CODEDIRS)
 
 .PHONY: fix
 fix:
-	uv run black $(SRCDIR)
-	uv run ruff check --fix $(SRCDIR)
+	uv run black $(CODEDIRS)
+	uv run ruff check --fix $(CODEDIRS)
 
 .PHONY: test
 test:
-	uv run coverage run --module pytest test
+	uv run coverage run --source $(SRCDIR) --module pytest test
 	uv run coverage report
 	uv run coverage html
