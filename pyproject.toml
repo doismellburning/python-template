@@ -43,7 +43,7 @@ select = [
 dev = [
     "black",
     "coverage",
-    "mypy",
     "pytest",
     "ruff",
+    "ty",
 ]
