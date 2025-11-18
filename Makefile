@@ -7,11 +7,11 @@ bootstrap:
 	uv sync --dev
 
 .PHONY: check
-check: black lint ty
+check: format lint ty
 
-.PHONY: black
-black:
-	uv run black --check $(CODEDIRS)
+.PHONY: format
+format:
+	uv run ruff format --check $(CODEDIRS)
 
 .PHONY: lint
 lint:
@@ -23,7 +23,7 @@ ty:
 
 .PHONY: fix
 fix:
-	uv run black $(CODEDIRS)
+	uv run ruff format $(CODEDIRS)
 	uv run ruff check --fix $(CODEDIRS)
 
 .PHONY: test

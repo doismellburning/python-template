@@ -41,7 +41,6 @@ select = [
 
 [dependency-groups]
 dev = [
-    "black",
     "coverage",
     "pytest",
     "ruff",

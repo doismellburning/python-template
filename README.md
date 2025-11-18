@@ -16,9 +16,8 @@ However, hopefully you'll appreciate some of the ideas within!
 * Dependabot updates for Python dependencies and GitHub Actions
 * Dependabot auto-merge for minor and patch-level updates
 * Makefile with convenience commands
-* [Black](https://black.readthedocs.io/en/stable/) for code formatting
 * [structlog](https://www.structlog.org/en/stable/) for structured logging
 * [pytest](https://docs.pytest.org/en/stable/) for testing
 * [Coverage.py](https://coverage.readthedocs.io/en/latest/) for measuring code coverage
 * [ty](https://docs.astral.sh/ty/) for type checking
-* [Ruff](https://docs.astral.sh/ruff/) for [linting ALL the things](https://docs.astral.sh/ruff/rules/)
+* [Ruff](https://docs.astral.sh/ruff/) for code formatting and [linting ALL the things](https://docs.astral.sh/ruff/rules/)
