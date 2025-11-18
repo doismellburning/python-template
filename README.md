@@ -20,5 +20,5 @@ However, hopefully you'll appreciate some of the ideas within!
 * [structlog](https://www.structlog.org/en/stable/) for structured logging
 * [pytest](https://docs.pytest.org/en/stable/) for testing
 * [Coverage.py](https://coverage.readthedocs.io/en/latest/) for measuring code coverage
-* [Mypy](https://www.mypy-lang.org/) for type checking
+* [ty](https://docs.astral.sh/ty/) for type checking
 * [Ruff](https://docs.astral.sh/ruff/) for [linting ALL the things](https://docs.astral.sh/ruff/rules/)
