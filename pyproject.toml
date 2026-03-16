@@ -3,7 +3,7 @@ name = "python-template"
 version = "0"
 readme = "README.md"
 description = "Lorem ipsum dolor sit amet"
-requires-python = ">=3.12"
+requires-python = ">=3.14"
 dependencies = [
     "structlog",
 ]
@@ -37,6 +37,8 @@ select = [
 	"UP",  # pyupgrade
 	"B",  # flake8-bugbear
 	"INP",  # flake8-no-pep420
+	"PLC0415",
+	"TID253",
 ]
 
 [dependency-groups]
