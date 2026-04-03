@@ -2,6 +2,8 @@ SRCDIR=src
 TESTDIR=test
 CODEDIRS=$(SRCDIR) $(TESTDIR)
 
+.DEFAULT_GOAL := check
+
 .PHONY: bootstrap
 bootstrap:
 	uv sync --dev
