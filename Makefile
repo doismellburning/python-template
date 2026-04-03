@@ -26,6 +26,10 @@ fix:
 	uv run ruff format $(CODEDIRS)
 	uv run ruff check --fix $(CODEDIRS)
 
+.PHONY: clean
+clean:
+	git clean -X --force
+
 .PHONY: test
 test:
 	uv run coverage run --source $(SRCDIR) --module pytest test
