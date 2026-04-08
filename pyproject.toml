@@ -39,6 +39,11 @@ select = [
 	"INP",  # flake8-no-pep420
 	"PLC0415",
 	"TID253",
+	"RUF",  # Ruff-specific rules
+	"PT",  # flake8-pytest-style
+	"SIM",  # flake8-simplify
+	"PERF",  # Perflint
+	"LOG",  # flake8-logging
 ]
 
 [dependency-groups]

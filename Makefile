@@ -2,6 +2,8 @@ SRCDIR=src
 TESTDIR=test
 CODEDIRS=$(SRCDIR) $(TESTDIR)
 
+.DEFAULT_GOAL := check
+
 .PHONY: bootstrap
 bootstrap:
 	uv sync --dev
@@ -25,6 +27,10 @@ ty:
 fix:
 	uv run ruff format $(CODEDIRS)
 	uv run ruff check --fix $(CODEDIRS)
+
+.PHONY: clean
+clean:
+	git clean -X --force
 
 .PHONY: test
 test:
